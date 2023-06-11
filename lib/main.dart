@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'ITG Consume API',
+      title: 'InstitutTeknologiGarut Consume API',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
