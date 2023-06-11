@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                                   if (result) {
                                     ScaffoldMessenger.of(context).showSnackBar(
                                       const SnackBar(
-                                        content: Text("Post deleted"),
+                                        content: Text("Post Deleted"),
                                         behavior: SnackBarBehavior.floating,
                                       ),
                                     );
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                                   } else {
                                     ScaffoldMessenger.of(context).showSnackBar(
                                       const SnackBar(
-                                        content: Text("Failed to delete post"),
+                                        content: Text("Failed to Delete Post"),
                                       ),
                                     );
                                     setState(() {});
@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 );
               } else {
-                return const Text("Tidak ada data");
+                return const Text("Tidak ada Data");
               }
             } else {
               return const Text("Error");
