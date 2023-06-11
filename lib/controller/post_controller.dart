@@ -1,10 +1,11 @@
-import 'dart:convert';
 import 'dart:io';
+import 'dart:convert';
 import 'package:kel_1_api/models/album.dart';
 import 'package:kel_1_api/models/comment.dart';
 import 'package:kel_1_api/models/photo.dart';
 import 'package:kel_1_api/models/post.dart';
 import 'package:kel_1_api/services/post_services.dart';
+
 
 class PostController {
   Future<List<Post>> fetchAll() async {
@@ -22,6 +23,8 @@ class PostController {
     });
   }
 
+  
+  
   Future<List<Comment>> fetchComment(int id) async {
     return await PostService().fetchComments(id).then((res) {
       if (res.statusCode == HttpStatus.ok) {
