@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       ),
       routeInformationParser: Approutes.goRouter.routeInformationParser,
       routeInformationProvider: Approutes.goRouter.routeInformationProvider,
-      routerDelegate: Approutes.goRouter.routerDelegate
+      routerDelegate: Approutes.goRouter.routerDelegate,
     );
   }
 }
